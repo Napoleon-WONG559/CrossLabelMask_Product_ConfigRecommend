@@ -9,4 +9,75 @@
 |MT-DNN|41.9|59.8|67.3|67.0|
 |LACO|41.7|60.5|67.5|67.0|
 |MTOP|40.6|60.3|67.0|67.1|
-|CLM|42.7|61.5|68.7|67.7|
+|CLM|**42.7**|**61.5**|**68.7**|**67.7**|
+
+### bike dataset
+
+|method|Bike Type| Age Range| Wheel Size| Number of Speeds| Brake Style| Frame Material| Suspension Type
+|---|---|---|---|---|---|---|---|
+|MT-DNN|56.8|76.1|62.3|58.4|53.1|67.6|49.7|
+|LACO|57.1|76.1|61.8|57.8|54.3|67.9|**50.7**|
+|MTOP|55.8|75.7|61.3|**59.5**|55.0|65.4|47.7|
+|CLM|**58.5**|**76.4**|**62.4**|58.7|**55.5**|**69.3**|50.1|
+
+### smartwatch dataset
+
+|method|Screen Size| Display Type| Battery Life
+|---|---|---|---|
+|MT-DNN|44.4|45.9|63.7|
+|LACO|44.2|44.9|64.6|
+|MTOP|43.3|45.4|65.2|
+|CLM|**45.5**|**47.5**|**66.5**|
+
+# Theoretical foundation of Cross label Mask
+
+## Principle: Positive Conditional Mutual Information for CLM
+
+**Proposition.**
+![image](./img/MI_proposition.png)
+
+**Proof.**
+![image](./img/MI_proof.png)
+
+---
+
+**One-sentence intuition**
+
+> Since (H_{ij}) perturbs the logits in a non-uniform direction with positive probability, it changes the predictive distribution of (Y_i) beyond what (H_i) provides, yielding positive conditional mutual information.
+
+![image](./img/MI_explain.png)
+
+## Theorem: Provably Improved Lower Bound based on Fano Inequality
+
+**Main Theorem.**
+![image](./img/Theorem_Fano.png)
+
+**Problem Setting**
+![image](./img/problem_setting.png)
+
+**Assumptions**
+![image](./img/assumptions_fano.png)
+
+**Proof.**
+
+**Step 1: Fano's Inequality**
+![image](./img/Theorem_proof_step_1.png)
+
+**Step 2: Apply Fano on baseline(No CLM)**
+![image](./img/Theorem_proof_step_2.png)
+
+**Step 3: Decomposition of CLM's mutual information**
+![image](./img/Theorem_proof_step_3.png)
+
+**Step 4: Apply Fano on CLM**
+![image](./img/Theorem_proof_step_4.png)
+
+**Step 5: Connect two lower bounds by lower bounds subtraction**
+![image](./img/Theorem_proof_end.png)
+
+## Corollary
+According to the Theorem, we know that
+![image](./img/Corollary_step_1.png)
+
+Given the first principle, we prove the condition holds. Therefore, we have the following corollary.
+![image](./img/Corollary_step_2.png)
