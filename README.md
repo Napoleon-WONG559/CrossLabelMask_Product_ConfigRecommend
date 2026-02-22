@@ -29,7 +29,7 @@
 |MTOP|43.3|45.4|65.2|
 |CLM|**45.5**|**47.5**|**66.5**|
 
-# Theoretical foundation of Cross label Mask
+# Theoretical foundation of Cross Label Mask
 
 ## Principle: Positive Conditional Mutual Information for CLM
 
@@ -47,7 +47,7 @@
 
 ![image](./img/MI_explain.png)
 
-## Theorem: Provably Improved Lower Bound based on Fano Inequality
+## Theorem: Provably Improved Error Lower Bound based on Fano Inequality
 
 **Main Theorem.**
 ![image](./img/Theorem_Fano.png)
