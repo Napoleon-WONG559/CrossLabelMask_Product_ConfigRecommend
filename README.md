@@ -1,11 +1,24 @@
 # Cross-label mask enabled prompt structure for configurable product recommendation
 
+## Results on laptop dataset
+
+### laptop dataset
+
+|method|Processor|Graphic Card|Hard Disk|RAM|Screen|
+|---|---|---|---|---|---|
+|Single Task|47.1|55.7|48.0|45.8|62.4|
+|MT-DNN|47.8|59.3|47.4|51.7|62.5|
+|LACO|46.6|57.7|48.1|52.0|62.7|
+|MTOP|47.4|57.3|47.8|52.5|60.7|
+|CLM|**50.4**|**59.8**|**49.3**|**52.8**|**65.6**|
+
 ## Results for extended experiments
 
 ### Car seat dataset
 
 |method|Seat Type|Weight Range|Installation Type|Harness Type|
 |---|---|---|---|---|
+|Single Task|40.5|57.1|64.9|65.1|
 |MT-DNN|41.9|59.8|67.3|67.0|
 |LACO|41.7|60.5|67.5|67.0|
 |MTOP|40.6|60.3|67.0|67.1|
@@ -15,6 +28,7 @@
 
 |method|Bike Type| Age Range| Wheel Size| Number of Speeds| Brake Style| Frame Material| Suspension Type
 |---|---|---|---|---|---|---|---|
+|Single Task|52.9|74.5|61.7|57.6|54.8|67.7|49.5|
 |MT-DNN|56.8|76.1|62.3|58.4|53.1|67.6|49.7|
 |LACO|57.1|76.1|61.8|57.8|54.3|67.9|**50.7**|
 |MTOP|55.8|75.7|61.3|**59.5**|55.0|65.4|47.7|
@@ -24,6 +38,7 @@
 
 |method|Screen Size| Display Type| Battery Life
 |---|---|---|---|
+|Single Task|43.9|45.7|62.5|
 |MT-DNN|44.4|45.9|63.7|
 |LACO|44.2|44.9|64.6|
 |MTOP|43.3|45.4|65.2|
