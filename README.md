@@ -11,6 +11,9 @@
 |LACO|46.6|57.7|48.1|52.0|62.7|
 |MTOP|47.4|57.3|47.8|52.5|60.7|
 |CLM|**50.4**|**59.8**|**49.3**|**52.8**|**65.6**|
+|-|-|-|-|-|-|
+|zero-shot deepseek-flash|25.0|15.1|27.3|34.2|53.8|
+|zero-shot deepseek-pro|13.9|16.6|11.4|24.7|37.3|
 
 ## Results for extended experiments
 
@@ -34,6 +37,9 @@ We tried several methods to optimize the CLM performance results. The methods in
 |MTOP|40.6|60.3|67.0|67.1|
 |CLM|42.7|61.5|68.7|67.7|
 |CLM(optimized)|**43.0**|**62.1**|**69.6**|**69.4**|
+|-|-|-|-|-|
+|zero-shot deepseek-flash|26.6|21.8|26.0|63.6|
+|zero-shot deepseek-pro|28.8|17.8|23.6|63.7|
 
 ### bike dataset
 
@@ -45,6 +51,9 @@ We tried several methods to optimize the CLM performance results. The methods in
 |MTOP|55.8|75.7|61.3|**59.5**|55.0|65.4|47.7|
 |CLM|58.5|76.4|62.4|58.7|55.5|**69.3**|50.1|
 |CLM(optimized)|**59.1**|**77.6**|**64.8**|59.0|**55.9**|68.5|**51.6**|
+|-|-|-|-|-|-|-|-|
+|zero-shot deepseek-flash|46.4|76.4|35.1|45.2|50.3|37.4|49.5|
+|zero-shot deepseek-pro|46.2|76.7|59.0|44.1|52.2|58.1|49.0|
 
 ### smartwatch dataset
 
@@ -55,6 +64,9 @@ We tried several methods to optimize the CLM performance results. The methods in
 |LACO|44.2|44.9|64.6|
 |MTOP|43.3|45.4|65.2|
 |CLM|**45.5**|**47.5**|**66.5**|
+|-|-|-|-|
+|zero-shot deepseek-flash|44.3|21.2|35.8|
+|zero-shot deepseek-pro|27.3|34.4|36.7|
 
 # Theoretical foundation of Cross Label Mask
 
