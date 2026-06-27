@@ -14,6 +14,9 @@
 |-|-|-|-|-|-|
 |zero-shot deepseek-flash|25.0|15.1|27.3|34.2|53.8|
 |zero-shot deepseek-pro|13.9|16.6|11.4|24.7|37.3|
+|few-shot(5-shot) deepseek-flash|29.6|45.4|30.1|42.0|54.6|
+|few-shot(5-shot) deepseek-pro|25.1|37.8|19.8|40.0|51.6|
+|LoRA(Llama 3B)|47.8|59.1|48.6|51.5|65.1|
 
 ## Results for extended experiments
 
@@ -40,6 +43,9 @@ We tried several methods to optimize the CLM performance results. The methods in
 |-|-|-|-|-|
 |zero-shot deepseek-flash|26.6|21.8|26.0|63.6|
 |zero-shot deepseek-pro|28.8|17.8|23.6|63.7|
+|few-shot(5-shot) deepseek-flash|27.2|42.2|35.6|60.1|
+|few-shot(5-shot) deepseek-pro|26.1|40.9|25.9|55.9|
+|LoRA(Llama 3B)|41.6|60.9|68.0|67.9|
 
 ### bike dataset
 
@@ -54,6 +60,9 @@ We tried several methods to optimize the CLM performance results. The methods in
 |-|-|-|-|-|-|-|-|
 |zero-shot deepseek-flash|46.4|76.4|35.1|45.2|50.3|37.4|49.5|
 |zero-shot deepseek-pro|46.2|76.7|59.0|44.1|52.2|58.1|49.0|
+|few-shot(5-shot) deepseek-flash|55.9|76.7|50.9|53.6|49.2|62.6|48.4|
+|few-shot(5-shot) deepseek-pro|56.9|77.3|**64.9**|52.8|49.4|65.8|49.4|
+|LoRA(Llama 3B)|57.1|76.6|63.4|59.0|54.9|68.3|50.8|
 
 ### smartwatch dataset
 
@@ -67,6 +76,9 @@ We tried several methods to optimize the CLM performance results. The methods in
 |-|-|-|-|
 |zero-shot deepseek-flash|44.3|21.2|35.8|
 |zero-shot deepseek-pro|27.3|34.4|36.7|
+|few-shot(5-shot) deepseek-flash|40.4|30.9|45.6|
+|few-shot(5-shot) deepseek-pro|43.6|33.0|47.8|
+|LoRA(Llama 3B)|43.2|46.4|66.1|
 
 # Theoretical foundation of Cross Label Mask
 
